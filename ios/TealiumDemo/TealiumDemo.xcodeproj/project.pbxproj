@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71DA80241B546BF4003E94FE /* TealiumIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA80231B546BF4003E94FE /* TealiumIQ.m */; };
+		71DA80291B54A2C7003E94FE /* design-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80271B54A2C7003E94FE /* design-25.png */; };
+		71DA802A1B54A2C7003E94FE /* settings_3-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80281B54A2C7003E94FE /* settings_3-25.png */; };
 		71DE33B51B505BBF007F3ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B41B505BBF007F3ADF /* main.m */; };
 		71DE33B81B505BBF007F3ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B71B505BBF007F3ADF /* AppDelegate.m */; };
 		71DE33C11B505BBF007F3ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33BF1B505BBF007F3ADF /* Main.storyboard */; };
@@ -32,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71DA80221B546BF4003E94FE /* TealiumIQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumIQ.h; sourceTree = "<group>"; };
+		71DA80231B546BF4003E94FE /* TealiumIQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumIQ.m; sourceTree = "<group>"; };
+		71DA80271B54A2C7003E94FE /* design-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "design-25.png"; sourceTree = "<group>"; };
+		71DA80281B54A2C7003E94FE /* settings_3-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_3-25.png"; sourceTree = "<group>"; };
 		71DE33AF1B505BBF007F3ADF /* TealiumDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TealiumDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DE33B31B505BBF007F3ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DE33B41B505BBF007F3ADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71DA80211B546BF4003E94FE /* TealiumIQ */ = {
+			isa = PBXGroup;
+			children = (
+				71DA80221B546BF4003E94FE /* TealiumIQ.h */,
+				71DA80231B546BF4003E94FE /* TealiumIQ.m */,
+			);
+			path = TealiumIQ;
+			sourceTree = "<group>";
+		};
+		71DA80251B54A2C7003E94FE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				71DA80261B54A2C7003E94FE /* Graphics */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		71DA80261B54A2C7003E94FE /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				71DA80271B54A2C7003E94FE /* design-25.png */,
+				71DA80281B54A2C7003E94FE /* settings_3-25.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
 		71DE33A61B505BBF007F3ADF = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +132,13 @@
 			children = (
 				71DE33B61B505BBF007F3ADF /* AppDelegate.h */,
 				71DE33B71B505BBF007F3ADF /* AppDelegate.m */,
+				71DA80211B546BF4003E94FE /* TealiumIQ */,
 				71DE33E81B5060E7007F3ADF /* Views */,
 				71DE33E11B50609B007F3ADF /* ViewControllers */,
 				71DE33BF1B505BBF007F3ADF /* Main.storyboard */,
 				71DE33C21B505BBF007F3ADF /* Images.xcassets */,
 				71DE33C41B505BBF007F3ADF /* LaunchScreen.xib */,
+				71DA80251B54A2C7003E94FE /* Assets */,
 				71DE33B21B505BBF007F3ADF /* Supporting Files */,
 			);
 			path = TealiumDemo;
@@ -248,6 +283,8 @@
 			files = (
 				71DE33C11B505BBF007F3ADF /* Main.storyboard in Resources */,
 				71DE33C61B505BBF007F3ADF /* LaunchScreen.xib in Resources */,
+				71DA802A1B54A2C7003E94FE /* settings_3-25.png in Resources */,
+				71DA80291B54A2C7003E94FE /* design-25.png in Resources */,
 				71DE33C31B505BBF007F3ADF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +305,7 @@
 			files = (
 				71DE33E41B5060C7007F3ADF /* FormItemCell.m in Sources */,
 				71DE33E71B5060DF007F3ADF /* ButtonCell.m in Sources */,
+				71DA80241B546BF4003E94FE /* TealiumIQ.m in Sources */,
 				71DE33B81B505BBF007F3ADF /* AppDelegate.m in Sources */,
 				71DE33E01B506093007F3ADF /* APISampler.m in Sources */,
 				71DE33B51B505BBF007F3ADF /* main.m in Sources */,
@@ -478,6 +516,7 @@
 				71DE33D71B505BBF007F3ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71DE33D81B505BBF007F3ADF /* Build configuration list for PBXNativeTarget "TealiumDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +525,7 @@
 				71DE33DA1B505BBF007F3ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

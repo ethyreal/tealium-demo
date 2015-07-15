@@ -9,6 +9,7 @@
 #import "Settings.h"
 #import "FormItemCell.h"
 #import "ButtonCell.h"
+#import "TealiumIQ.h"
 
 @interface Settings () <UITextFieldDelegate>
 
@@ -81,22 +82,16 @@ typedef NS_ENUM(NSInteger, SettingsItem){
 - (void) prepareFormItemCell:(FormItemCell*)formCell ForIndexPath:(NSIndexPath*) indexPath{
     switch (indexPath.row) {
         case SettingsItemAccount:
-            formCell.formLabel.text = @"Account";
-            
-            // TODO: load persistence + defaults here
-            formCell.formTextField.placeholder = @"";
+            formCell.formLabel.text = NSLocalizedString(@"Account", @"");
+            formCell.formTextField.text = [TealiumIQ tealiumConfig][kTealiumAccountKey];
             break;
         case SettingsItemProfile:
-            formCell.formLabel.text = @"Profile";
-            
-            // TODO: load persistence + defaults here
-            formCell.formTextField.placeholder = @"";
+            formCell.formLabel.text = NSLocalizedString(@"Profile", @"");
+            formCell.formTextField.text = [TealiumIQ tealiumConfig][kTealiumProfileKey];
             break;
         case SettingsItemEnvironment:
-            formCell.formLabel.text = @"Environment";
-            
-            // TODO: load persistence + defaults here
-            formCell.formTextField.placeholder = @"";
+            formCell.formLabel.text = NSLocalizedString(@"Environment", @"");
+            formCell.formTextField.text = [TealiumIQ tealiumConfig][kTealiumEnvironmentKey];
             break;
         default:
             NSLog(@"Unsupported Cell returned.");
@@ -127,9 +122,60 @@ typedef NS_ENUM(NSInteger, SettingsItem){
     switch (indexPath.row) {
         case SettingsItemSave:
             // TODO:
+        {
+            FormItemCell *accountCell = [self cellForSettingsItem:SettingsItemAccount];
+            FormItemCell *profileCell = [self cellForSettingsItem:SettingsItemProfile];
+            FormItemCell *environmentCell = [self cellForSettingsItem:SettingsItemEnvironment];
+            
+            NSString *account = accountCell.formTextField.text;
+            NSString *profile = profileCell.formTextField.text;
+            NSString *environment = environmentCell.formTextField.text;
+            
+            if (![TealiumIQ saveAccount:account
+                                profile:profile
+                                    env:environment]){
+                // TODO: present user feedback that all settings must be filled out
+                
+                // TODO: replace with UIAlertController
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Account, Profile, and Environment setting required."
+                                                                message:nil
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+                
+            } else {
+                
+                [TealiumIQ restart];
+                
+                // TODO: replace with UIAlertController
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Library restarted with new account-profile-environment settings."
+                                                                message:nil
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+                [self.tableView reloadData];
+            }
+        }
             break;
         case SettingsItemDefault:
+        {
             
+            // TODO: replace with UIAlertController
+
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Library restarted with default account-profile-environment loaded."
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            [TealiumIQ restart];
+            [self.tableView reloadData];
+            
+        }
             break;
         default:
             break;
@@ -143,8 +189,7 @@ typedef NS_ENUM(NSInteger, SettingsItem){
     switch (textField.tag) {
         case SettingsItemAccount:
         {
-            NSIndexPath *sourcePath = [NSIndexPath indexPathForRow:SettingsItemProfile inSection:0];
-            FormItemCell *cell = (FormItemCell*)[self.tableView cellForRowAtIndexPath:sourcePath];
+            FormItemCell *cell = [self cellForSettingsItem:textField.tag];
             if (cell){
                 [cell.formTextField becomeFirstResponder];
             }
@@ -152,8 +197,7 @@ typedef NS_ENUM(NSInteger, SettingsItem){
             break;
         case SettingsItemProfile:
         {
-            NSIndexPath *sourcePath = [NSIndexPath indexPathForRow:SettingsItemEnvironment inSection:0];
-            FormItemCell *cell = (FormItemCell*)[self.tableView cellForRowAtIndexPath:sourcePath];
+            FormItemCell *cell = [self cellForSettingsItem:textField.tag];
             if (cell){
                 [cell.formTextField becomeFirstResponder];
             }
@@ -168,6 +212,16 @@ typedef NS_ENUM(NSInteger, SettingsItem){
             break;
     }
     return true;
+}
+
+- (FormItemCell*) cellForSettingsItem:(SettingsItem) item{
+    NSIndexPath *path = [NSIndexPath indexPathForRow:item inSection:0];
+    if (!path){
+        return nil;
+    }
+    
+    FormItemCell *cell = (FormItemCell*)[self.tableView cellForRowAtIndexPath:path];
+    return cell;
 }
 
 @end

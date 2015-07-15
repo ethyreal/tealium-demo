@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TealiumIQ.h"
 #import <TealiumLibrary/Tealium.h>
 
 @interface AppDelegate ()
@@ -19,11 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [Tealium initSharedInstance:@"tealiummobile"
-                        profile:@"demo"
-                         target:@"dev"
-                        options:TLDisplayVerboseLogs
-               globalCustomData:nil];
+    [TealiumIQ start];
     
     return YES;
 }

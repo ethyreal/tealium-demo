@@ -7,36 +7,45 @@
 //
 
 #import "APISampler.h"
-#import <TealiumLibrary/Tealium.h>
-
+#import "TealiumIQ.h"
 
 @interface APISampler () <UIAlertViewDelegate>
+
 @property (copy, nonatomic) NSString *customValue;
+
 @end
 
 @implementation APISampler
-
-/*
- trackEvent
- trackEventWithCustom
- 
- */
 
 typedef NS_ENUM(NSInteger, ApiSamplerItem){
     ApiSamplerItemSendEvent = 0,
     ApiSamplerItemSendEvent2,
     ApiSamplerItemSendEvent3,
+    ApiSamplerItemSendEvent4,
+    ApiSamplerItemSendEvent5,
     ApiSamplerItemNumberOfItems
 };
 
 
+/*
+ ========
+ EDITABLE
+ ========
+ 
+ Modify the customValue property to demo iVar autotracking
+ 
+ */
 - (void) viewDidLoad{
     [super viewDidLoad];
     self.title = @"API Sampler";
-    
-    self.customValue = @"Some custom value";
+    self.customValue = @"Custom property value";
 }
 
+/*
+ ========
+ EDITABLE
+ ========
+ */
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
@@ -46,69 +55,22 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
     
 }
 
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return ApiSamplerItemNumberOfItems;
-}
-
-- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
-
-- (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
-    switch (indexPath.row) {
-        case ApiSamplerItemSendEvent:
-            cell.textLabel.text = @"Send Event";
-            break;
-        case ApiSamplerItemSendEvent2:
-            cell.textLabel.text = @"Send Custom Event";
-            
-            break;
-        case ApiSamplerItemSendEvent3:
-            cell.textLabel.text = @"Send Event 3";
-            break;
-        default:
-            break;
-    }
-    
-    return cell;
-}
-
+/*
+ ========
+ EDITABLE
+ ========
+ 
+ 
+ */
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case ApiSamplerItemSendEvent:
         {
-            
-            NSDictionary *customData = @{@"event_name":@"Event with Custom Data",
-                                         @"associated_screen_title" : self.title,
-                                         @"customKey": @"customValue"};
-            
-            [Tealium trackCallType:TealiumEventCall
-                        customData:customData
-                            object:nil];
+            [TealiumIQ trackEvent];
         }
-            
             break;
         case ApiSamplerItemSendEvent2:
         {
-            
-            // TODO: property
-            NSDictionary *customData = @{@"event_name":@"Event with Custom Data",
-                                         @"associated_screen_title" : self.title,
-                                         @"customKey": self.customValue};
-            
-            [Tealium trackCallType:TealiumEventCall
-                        customData:customData
-                            object:nil];
-        }
-
-            break;
-        case ApiSamplerItemSendEvent3:
-            
-        {
-            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter a name:"
                                                             message:nil
                                                            delegate:self
@@ -116,9 +78,19 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
                                                   otherButtonTitles:@"OK", nil];
             [alert setAlertViewStyle: UIAlertViewStylePlainTextInput];
             [alert show];
-            
-            // TODO:  Displays alert for custom input
+        }
 
+            break;
+        case ApiSamplerItemSendEvent3:
+            
+        {
+            [TealiumIQ trackEventWithObject:tableView];
+        }
+            break;
+            
+        case ApiSamplerItemSendEvent4:
+        {
+            [TealiumIQ launchMobileCompanion];
         }
             break;
         default:
@@ -146,4 +118,50 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
     }
 }
 
+#pragma mark - TABLEVIEW DELEGATE
+
+/*
+ =========================
+ DO NOT EDIT BELOW METHODS
+ =========================
+ */
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return ApiSamplerItemNumberOfItems;
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+/*
+ Edit this method only if wanting to change the cell titles
+ */
+- (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    switch (indexPath.row) {
+        case ApiSamplerItemSendEvent:
+            cell.textLabel.text = @"Send Event";
+            break;
+        case ApiSamplerItemSendEvent2:
+            cell.textLabel.text = @"Send Custom Event";
+            break;
+        case ApiSamplerItemSendEvent3:
+            cell.textLabel.text = @"Send Event with Object Data";
+            break;
+            
+        case ApiSamplerItemSendEvent4:
+            cell.textLabel.text = @"Launch Mobile Companion";
+            break;
+            
+        case ApiSamplerItemSendEvent5:
+            break;
+        default:
+            break;
+    }
+    
+    return cell;
+}
 @end
