@@ -65,12 +65,20 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
     NSString *account = config[kTealiumAccountKey];
     NSString *profile = config[kTealiumProfileKey];
     NSString *env = config[kTealiumEnvironmentKey];
-        
+    
+    
+#ifndef COLLECT
     [Tealium initSharedInstance:account
                         profile:profile
                          target:env
                         options:TLDisplayVerboseLogs
                globalCustomData:nil];
+#else 
+    TEALCollectConfiguration *collectConfig = [TEALCollectConfiguration configurationWithAccount:account
+                                                                                  profile:profile
+                                                                              environment:env];
+    [TealiumCollect enableWithConfiguration:collectConfig];
+#endif
 
 }
 
@@ -133,18 +141,40 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
  Example of a basic event / link track call
  */
 + (void) trackEvent{
+    
+    NSDictionary *data = @{@"event_name":@"Sample Event"};
+    
+#ifndef COLLECT
+    
     [Tealium trackCallType:TealiumEventCall
-                customData:@{@"event_name":@"Sample Event"}
+                customData:data
                     object:nil];
+#else
+    
+    [TealiumCollect sendEventWithData:data];
+    
+#endif
+    
 }
 
 /*
  Example of a basic view / page change track call
  */
 + (void) trackView{
+    
+    NSDictionary *data = @{@"page_type":@"Sample View"};
+
+#ifndef COLLECT
+    
     [Tealium trackCallType:TealiumViewCall
-                customData:@{@"page_type":@"Sample View"}
+                customData:data
                     object:nil];
+#else
+    
+    [TealiumCollect sendViewWithData:data];
+
+#endif
+    
 }
 
 /*
@@ -158,9 +188,18 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
     customData[@"event_name"] = @"Sample Event with Custom Data";
     [customData addEntriesFromDictionary:data];
     
+#ifndef COLLECT
+    
     [Tealium trackCallType:TealiumEventCall
                 customData:customData
                     object:nil];
+    
+#else 
+    
+    [TealiumCollect sendEventWithData:customData];
+    
+#endif
+    
 }
 
 /*
@@ -173,9 +212,19 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
     NSMutableDictionary *customData = [NSMutableDictionary dictionary];
     customData[@"page_type"] = @"Sample View with Custom Data";
     [customData addEntriesFromDictionary:data];
+    
+#ifndef COLLECT
+    
     [Tealium trackCallType:TealiumViewCall
-                customData:data
+                customData:customData
                     object:nil];
+    
+#else 
+    
+    [TealiumCollect sendViewWithData:customData];
+    
+#endif
+    
 }
 
 /*
@@ -185,9 +234,11 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
  */
 + (void) trackEventWithObject:(NSObject *)object{
     
+#ifndef COLLECT
     [Tealium trackCallType:TealiumEventCall
                 customData:@{@"event_name":@"Sample Event with Autotracked Object data"}
                     object:object];
+#endif
 }
 
 /*
@@ -197,12 +248,14 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
  */
 + (void) trackEventWithAssociatedView:(UIViewController *)viewController{
     
+#ifndef COLLECT
     NSString *title = viewController.title;
     
     [Tealium trackCallType:TealiumEventCall
                 customData:@{@"event_name":@"Sample Event with associated view controller",
                             @"associated_page_type":title}
                     object:viewController];
+#endif
 }
 
 /*
@@ -212,9 +265,11 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
  */
 + (void) trackViewController:(UIViewController *)viewController{
     
+#ifndef COLLECT
     [Tealium trackCallType:TealiumViewCall
                 customData:@{@"event_name":@"Sample View with Autotracked object data"}
                     object:viewController];
+#endif
 }
 
 /*
@@ -222,8 +277,10 @@ NSString * const kTealiumEnvironmentKey = @"tealiumEnvironment";
  
  */
 + (void) launchMobileCompanion{
+#ifdef FULL
     [Tealium trackCallType:TealiumEventCall
                 customData:@{@"event_name":@"reveal"}
                     object:nil];
+#endif
 }
 @end

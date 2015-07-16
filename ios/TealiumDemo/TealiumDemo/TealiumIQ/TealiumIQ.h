@@ -8,7 +8,13 @@
 //  BRIEF: This is a convenience class to handle basic Tealium API calls - this paradigm of abstracting analytics commands to a separate object is NOT requried but is a recommended best practice.
 
 #import <UIKit/UIKit.h>
+
+#ifndef COLLECT
 #import <TealiumLibrary/Tealium.h>
+#else
+#import <TealiumCollect/TealiumCollect.h>
+#endif
+
 
 extern NSString * const kTealiumConfigKey;
 extern NSString * const kTealiumAccountKey;

@@ -37,7 +37,14 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
  */
 - (void) viewDidLoad{
     [super viewDidLoad];
-    self.title = @"API Sampler";
+#ifdef FULL
+    NSString *title = [NSString stringWithFormat:@"%@ API Sampler", TealiumLibraryVersion];
+#elif COMPACT
+    NSString *title = NSLocalizedString(@"Compact API Sampler", @"");
+#else
+    NSString *title = NSLocalizedString(@"Collect API Sampler", @"");
+#endif
+    self.title = title;
     self.customValue = @"Custom property value";
 }
 
@@ -49,10 +56,14 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
+    NSDictionary *data = @{@"screen_title":self.title};
+#ifndef COLLECT
     [Tealium trackCallType:TealiumViewCall
-                customData:@{@"screen_title":self.title}
+                customData:data
                     object:self];
-    
+#else
+    [TealiumCollect sendViewWithData:data];
+#endif
 }
 
 /*
@@ -71,7 +82,7 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
             break;
         case ApiSamplerItemSendEvent2:
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter a name:"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter a custom value:"
                                                             message:nil
                                                            delegate:self
                                                   cancelButtonTitle:@"Cancel"
@@ -90,12 +101,15 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
             
         case ApiSamplerItemSendEvent4:
         {
+#ifdef FULL
             [TealiumIQ launchMobileCompanion];
+#endif
         }
             break;
         default:
             break;
     }
+    [self.tableView reloadData];
 }
 
 
@@ -109,11 +123,16 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
         UITextField *field = [alertView textFieldAtIndex:0];
         NSDictionary *customData = @{@"event_name":@"Event with More Custom Data",
                                      @"associated_screen_title" : self.title,
-                                     @"name":field.text};
+                                     @"custom_value":field.text,
+                                     @"selected_value":field.text};
         
+#ifndef COLLECT
         [Tealium trackCallType:TealiumEventCall
                     customData:customData
                         object:nil];
+#else
+        [TealiumCollect sendEventWithData:customData];
+#endif
         
     }
 }
@@ -149,11 +168,14 @@ typedef NS_ENUM(NSInteger, ApiSamplerItem){
             cell.textLabel.text = @"Send Custom Event";
             break;
         case ApiSamplerItemSendEvent3:
+#ifndef COLLECT
             cell.textLabel.text = @"Send Event with Object Data";
+#endif
             break;
-            
         case ApiSamplerItemSendEvent4:
+#ifdef FULL
             cell.textLabel.text = @"Launch Mobile Companion";
+#endif
             break;
             
         case ApiSamplerItemSendEvent5:

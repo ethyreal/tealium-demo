@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <TealiumLibrary/Tealium.h>
 
 @interface Settings : UITableViewController
 

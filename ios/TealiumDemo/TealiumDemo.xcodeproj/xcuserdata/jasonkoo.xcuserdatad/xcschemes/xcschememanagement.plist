@@ -4,14 +4,44 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TealiumDemo.xcscheme</key>
+		<key>TealiumDemo_Collect.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TealiumDemo_Compact.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TealiumDemo_Compactx.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>TealiumDemo_Full.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>71BB082D1B5733C00064B326</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71BB08441B5733F70064B326</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71BB086F1B5741F90064B326</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>71DE33AE1B505BBF007F3ADF</key>
 		<dict>
 			<key>primary</key>
