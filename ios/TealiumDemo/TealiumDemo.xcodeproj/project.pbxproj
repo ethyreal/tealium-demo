@@ -7,6 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71BB082F1B5733C00064B326 /* FormItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E31B5060C7007F3ADF /* FormItemCell.m */; };
+		71BB08301B5733C00064B326 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E61B5060DF007F3ADF /* ButtonCell.m */; };
+		71BB08311B5733C00064B326 /* TealiumIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA80231B546BF4003E94FE /* TealiumIQ.m */; };
+		71BB08321B5733C00064B326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B71B505BBF007F3ADF /* AppDelegate.m */; };
+		71BB08331B5733C00064B326 /* APISampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DF1B506093007F3ADF /* APISampler.m */; };
+		71BB08341B5733C00064B326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B41B505BBF007F3ADF /* main.m */; };
+		71BB08351B5733C00064B326 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DC1B50607A007F3ADF /* Settings.m */; };
+		71BB08371B5733C00064B326 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DE33EC1B5067E1007F3ADF /* SystemConfiguration.framework */; };
+		71BB083A1B5733C00064B326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33BF1B505BBF007F3ADF /* Main.storyboard */; };
+		71BB083B1B5733C00064B326 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33C41B505BBF007F3ADF /* LaunchScreen.xib */; };
+		71BB083C1B5733C00064B326 /* settings_3-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80281B54A2C7003E94FE /* settings_3-25.png */; };
+		71BB083D1B5733C00064B326 /* design-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80271B54A2C7003E94FE /* design-25.png */; };
+		71BB083E1B5733C00064B326 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33C21B505BBF007F3ADF /* Images.xcassets */; };
+		71BB08461B5733F70064B326 /* FormItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E31B5060C7007F3ADF /* FormItemCell.m */; };
+		71BB08471B5733F70064B326 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E61B5060DF007F3ADF /* ButtonCell.m */; };
+		71BB08481B5733F70064B326 /* TealiumIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA80231B546BF4003E94FE /* TealiumIQ.m */; };
+		71BB08491B5733F70064B326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B71B505BBF007F3ADF /* AppDelegate.m */; };
+		71BB084A1B5733F70064B326 /* APISampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DF1B506093007F3ADF /* APISampler.m */; };
+		71BB084B1B5733F70064B326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B41B505BBF007F3ADF /* main.m */; };
+		71BB084C1B5733F70064B326 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DC1B50607A007F3ADF /* Settings.m */; };
+		71BB084E1B5733F70064B326 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DE33EC1B5067E1007F3ADF /* SystemConfiguration.framework */; };
+		71BB08511B5733F70064B326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33BF1B505BBF007F3ADF /* Main.storyboard */; };
+		71BB08521B5733F70064B326 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33C41B505BBF007F3ADF /* LaunchScreen.xib */; };
+		71BB08531B5733F70064B326 /* settings_3-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80281B54A2C7003E94FE /* settings_3-25.png */; };
+		71BB08541B5733F70064B326 /* design-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80271B54A2C7003E94FE /* design-25.png */; };
+		71BB08551B5733F70064B326 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33C21B505BBF007F3ADF /* Images.xcassets */; };
+		71BB08661B573C300064B326 /* TealiumLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BB08651B573C300064B326 /* TealiumLibrary.framework */; };
+		71BB086A1B573C430064B326 /* TealiumCollect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BB08671B573C430064B326 /* TealiumCollect.framework */; };
+		71BB086B1B573C430064B326 /* TealiumUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BB08691B573C430064B326 /* TealiumUtilities.framework */; };
+		71BB08711B5741F90064B326 /* FormItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E31B5060C7007F3ADF /* FormItemCell.m */; };
+		71BB08721B5741F90064B326 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E61B5060DF007F3ADF /* ButtonCell.m */; };
+		71BB08731B5741F90064B326 /* TealiumIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA80231B546BF4003E94FE /* TealiumIQ.m */; };
+		71BB08741B5741F90064B326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B71B505BBF007F3ADF /* AppDelegate.m */; };
+		71BB08751B5741F90064B326 /* APISampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DF1B506093007F3ADF /* APISampler.m */; };
+		71BB08761B5741F90064B326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33B41B505BBF007F3ADF /* main.m */; };
+		71BB08771B5741F90064B326 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DC1B50607A007F3ADF /* Settings.m */; };
+		71BB087A1B5741F90064B326 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DE33EC1B5067E1007F3ADF /* SystemConfiguration.framework */; };
+		71BB087C1B5741F90064B326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33BF1B505BBF007F3ADF /* Main.storyboard */; };
+		71BB087D1B5741F90064B326 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33C41B505BBF007F3ADF /* LaunchScreen.xib */; };
+		71BB087E1B5741F90064B326 /* settings_3-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80281B54A2C7003E94FE /* settings_3-25.png */; };
+		71BB087F1B5741F90064B326 /* design-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80271B54A2C7003E94FE /* design-25.png */; };
+		71BB08801B5741F90064B326 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE33C21B505BBF007F3ADF /* Images.xcassets */; };
+		71BB08871B5745B90064B326 /* TealiumLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BB08861B5745B90064B326 /* TealiumLibrary.framework */; };
 		71DA80241B546BF4003E94FE /* TealiumIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DA80231B546BF4003E94FE /* TealiumIQ.m */; };
 		71DA80291B54A2C7003E94FE /* design-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80271B54A2C7003E94FE /* design-25.png */; };
 		71DA802A1B54A2C7003E94FE /* settings_3-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA80281B54A2C7003E94FE /* settings_3-25.png */; };
@@ -20,7 +63,6 @@
 		71DE33E01B506093007F3ADF /* APISampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33DF1B506093007F3ADF /* APISampler.m */; };
 		71DE33E41B5060C7007F3ADF /* FormItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E31B5060C7007F3ADF /* FormItemCell.m */; };
 		71DE33E71B5060DF007F3ADF /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE33E61B5060DF007F3ADF /* ButtonCell.m */; };
-		71DE33EA1B50658A007F3ADF /* TealiumLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DE33E91B50658A007F3ADF /* TealiumLibrary.framework */; };
 		71DE33ED1B5067E1007F3ADF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DE33EC1B5067E1007F3ADF /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,11 +77,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71BB08421B5733C00064B326 /* TealiumDemo_Full.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TealiumDemo_Full.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BB08431B5733C10064B326 /* TealiumDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TealiumDemo copy-Info.plist"; path = "/Users/jasonkoo/Jason/tealium-demo/ios/TealiumDemo/TealiumDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		71BB08591B5733F70064B326 /* TealiumDemo_Collect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TealiumDemo_Collect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BB085A1B5733F70064B326 /* TealiumDemo - Compact copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TealiumDemo - Compact copy-Info.plist"; path = "/Users/jasonkoo/Jason/tealium-demo/ios/TealiumDemo/TealiumDemo - Compact copy-Info.plist"; sourceTree = "<absolute>"; };
+		71BB08651B573C300064B326 /* TealiumLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumLibrary.framework; path = TealiumDemo/Libraries/Full/TealiumLibrary.framework; sourceTree = "<group>"; };
+		71BB08671B573C430064B326 /* TealiumCollect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumCollect.framework; path = TealiumDemo/Libraries/Collect/TealiumCollect.framework; sourceTree = "<group>"; };
+		71BB08681B573C430064B326 /* TealiumCollectBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TealiumCollectBridgingHeader.h; path = TealiumDemo/Libraries/Collect/TealiumCollectBridgingHeader.h; sourceTree = "<group>"; };
+		71BB08691B573C430064B326 /* TealiumUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumUtilities.framework; path = TealiumDemo/Libraries/Collect/TealiumUtilities.framework; sourceTree = "<group>"; };
+		71BB08841B5741F90064B326 /* TealiumDemo_Compact copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TealiumDemo_Compact copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BB08851B5741FA0064B326 /* TealiumDemo_Compact copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TealiumDemo_Compact copy-Info.plist"; path = "/Users/jasonkoo/Jason/tealium-demo/ios/TealiumDemo/TealiumDemo_Compact copy-Info.plist"; sourceTree = "<absolute>"; };
+		71BB08861B5745B90064B326 /* TealiumLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TealiumLibrary.framework; path = TealiumDemo/Libraries/Compact/TealiumLibrary.framework; sourceTree = "<group>"; };
 		71DA80221B546BF4003E94FE /* TealiumIQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumIQ.h; sourceTree = "<group>"; };
 		71DA80231B546BF4003E94FE /* TealiumIQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumIQ.m; sourceTree = "<group>"; };
 		71DA80271B54A2C7003E94FE /* design-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "design-25.png"; sourceTree = "<group>"; };
 		71DA80281B54A2C7003E94FE /* settings_3-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_3-25.png"; sourceTree = "<group>"; };
-		71DE33AF1B505BBF007F3ADF /* TealiumDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TealiumDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DE33AF1B505BBF007F3ADF /* TealiumDemo_Compact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TealiumDemo_Compact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DE33B31B505BBF007F3ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DE33B41B505BBF007F3ADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71DE33B61B505BBF007F3ADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,17 +111,43 @@
 		71DE33E31B5060C7007F3ADF /* FormItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormItemCell.m; path = Views/FormItemCell.m; sourceTree = "<group>"; };
 		71DE33E51B5060DF007F3ADF /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonCell.h; path = Views/ButtonCell.h; sourceTree = "<group>"; };
 		71DE33E61B5060DF007F3ADF /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonCell.m; path = Views/ButtonCell.m; sourceTree = "<group>"; };
-		71DE33E91B50658A007F3ADF /* TealiumLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumLibrary.framework; sourceTree = "<group>"; };
 		71DE33EC1B5067E1007F3ADF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		71BB08361B5733C00064B326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB08661B573C300064B326 /* TealiumLibrary.framework in Frameworks */,
+				71BB08371B5733C00064B326 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BB084D1B5733F70064B326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB084E1B5733F70064B326 /* SystemConfiguration.framework in Frameworks */,
+				71BB086A1B573C430064B326 /* TealiumCollect.framework in Frameworks */,
+				71BB086B1B573C430064B326 /* TealiumUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BB08781B5741F90064B326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB08871B5745B90064B326 /* TealiumLibrary.framework in Frameworks */,
+				71BB087A1B5741F90064B326 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71DE33AC1B505BBF007F3ADF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				71DE33ED1B5067E1007F3ADF /* SystemConfiguration.framework in Frameworks */,
-				71DE33EA1B50658A007F3ADF /* TealiumLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +161,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71BB086C1B573C490064B326 /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				71BB08671B573C430064B326 /* TealiumCollect.framework */,
+				71BB08681B573C430064B326 /* TealiumCollectBridgingHeader.h */,
+				71BB08691B573C430064B326 /* TealiumUtilities.framework */,
+			);
+			name = Collect;
+			sourceTree = "<group>";
+		};
+		71BB086D1B573C4F0064B326 /* Compact */ = {
+			isa = PBXGroup;
+			children = (
+				71BB08861B5745B90064B326 /* TealiumLibrary.framework */,
+			);
+			name = Compact;
+			sourceTree = "<group>";
+		};
+		71BB086E1B573C590064B326 /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				71BB08651B573C300064B326 /* TealiumLibrary.framework */,
+			);
+			name = Full;
+			sourceTree = "<group>";
+		};
 		71DA80211B546BF4003E94FE /* TealiumIQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,14 +220,20 @@
 				71DE33CE1B505BBF007F3ADF /* TealiumDemoTests */,
 				71DE33B01B505BBF007F3ADF /* Products */,
 				71DE33EB1B5065A3007F3ADF /* Frameworks */,
+				71BB08431B5733C10064B326 /* TealiumDemo copy-Info.plist */,
+				71BB085A1B5733F70064B326 /* TealiumDemo - Compact copy-Info.plist */,
+				71BB08851B5741FA0064B326 /* TealiumDemo_Compact copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		71DE33B01B505BBF007F3ADF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71DE33AF1B505BBF007F3ADF /* TealiumDemo.app */,
+				71DE33AF1B505BBF007F3ADF /* TealiumDemo_Compact.app */,
 				71DE33CB1B505BBF007F3ADF /* TealiumDemoTests.xctest */,
+				71BB08421B5733C00064B326 /* TealiumDemo_Full.app */,
+				71BB08591B5733F70064B326 /* TealiumDemo_Collect.app */,
+				71BB08841B5741F90064B326 /* TealiumDemo_Compact copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,8 +306,10 @@
 		71DE33EB1B5065A3007F3ADF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71BB086C1B573C490064B326 /* Collect */,
+				71BB086D1B573C4F0064B326 /* Compact */,
+				71BB086E1B573C590064B326 /* Full */,
 				71DE33EC1B5067E1007F3ADF /* SystemConfiguration.framework */,
-				71DE33E91B50658A007F3ADF /* TealiumLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,9 +317,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71DE33AE1B505BBF007F3ADF /* TealiumDemo */ = {
+		71BB082D1B5733C00064B326 /* TealiumDemo_Full */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71DE33D51B505BBF007F3ADF /* Build configuration list for PBXNativeTarget "TealiumDemo" */;
+			buildConfigurationList = 71BB083F1B5733C00064B326 /* Build configuration list for PBXNativeTarget "TealiumDemo_Full" */;
+			buildPhases = (
+				71BB082E1B5733C00064B326 /* Sources */,
+				71BB08361B5733C00064B326 /* Frameworks */,
+				71BB08391B5733C00064B326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TealiumDemo_Full;
+			productName = TealiumDemo;
+			productReference = 71BB08421B5733C00064B326 /* TealiumDemo_Full.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71BB08441B5733F70064B326 /* TealiumDemo_Collect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BB08561B5733F70064B326 /* Build configuration list for PBXNativeTarget "TealiumDemo_Collect" */;
+			buildPhases = (
+				71BB08451B5733F70064B326 /* Sources */,
+				71BB084D1B5733F70064B326 /* Frameworks */,
+				71BB08501B5733F70064B326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TealiumDemo_Collect;
+			productName = TealiumDemo;
+			productReference = 71BB08591B5733F70064B326 /* TealiumDemo_Collect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71BB086F1B5741F90064B326 /* TealiumDemo_Compact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BB08811B5741F90064B326 /* Build configuration list for PBXNativeTarget "TealiumDemo_Compact" */;
+			buildPhases = (
+				71BB08701B5741F90064B326 /* Sources */,
+				71BB08781B5741F90064B326 /* Frameworks */,
+				71BB087B1B5741F90064B326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TealiumDemo_Compact;
+			productName = TealiumDemo;
+			productReference = 71BB08841B5741F90064B326 /* TealiumDemo_Compact copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71DE33AE1B505BBF007F3ADF /* TealiumDemo_Compactx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71DE33D51B505BBF007F3ADF /* Build configuration list for PBXNativeTarget "TealiumDemo_Compactx" */;
 			buildPhases = (
 				71DE33AB1B505BBF007F3ADF /* Sources */,
 				71DE33AC1B505BBF007F3ADF /* Frameworks */,
@@ -216,9 +380,9 @@
 			);
 			dependencies = (
 			);
-			name = TealiumDemo;
+			name = TealiumDemo_Compactx;
 			productName = TealiumDemo;
-			productReference = 71DE33AF1B505BBF007F3ADF /* TealiumDemo.app */;
+			productReference = 71DE33AF1B505BBF007F3ADF /* TealiumDemo_Compact.app */;
 			productType = "com.apple.product-type.application";
 		};
 		71DE33CA1B505BBF007F3ADF /* TealiumDemoTests */ = {
@@ -270,13 +434,52 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71DE33AE1B505BBF007F3ADF /* TealiumDemo */,
+				71BB08441B5733F70064B326 /* TealiumDemo_Collect */,
+				71BB086F1B5741F90064B326 /* TealiumDemo_Compact */,
+				71DE33AE1B505BBF007F3ADF /* TealiumDemo_Compactx */,
+				71BB082D1B5733C00064B326 /* TealiumDemo_Full */,
 				71DE33CA1B505BBF007F3ADF /* TealiumDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		71BB08391B5733C00064B326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB083A1B5733C00064B326 /* Main.storyboard in Resources */,
+				71BB083B1B5733C00064B326 /* LaunchScreen.xib in Resources */,
+				71BB083C1B5733C00064B326 /* settings_3-25.png in Resources */,
+				71BB083D1B5733C00064B326 /* design-25.png in Resources */,
+				71BB083E1B5733C00064B326 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BB08501B5733F70064B326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB08511B5733F70064B326 /* Main.storyboard in Resources */,
+				71BB08521B5733F70064B326 /* LaunchScreen.xib in Resources */,
+				71BB08531B5733F70064B326 /* settings_3-25.png in Resources */,
+				71BB08541B5733F70064B326 /* design-25.png in Resources */,
+				71BB08551B5733F70064B326 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BB087B1B5741F90064B326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB087C1B5741F90064B326 /* Main.storyboard in Resources */,
+				71BB087D1B5741F90064B326 /* LaunchScreen.xib in Resources */,
+				71BB087E1B5741F90064B326 /* settings_3-25.png in Resources */,
+				71BB087F1B5741F90064B326 /* design-25.png in Resources */,
+				71BB08801B5741F90064B326 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71DE33AD1B505BBF007F3ADF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +502,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		71BB082E1B5733C00064B326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB082F1B5733C00064B326 /* FormItemCell.m in Sources */,
+				71BB08301B5733C00064B326 /* ButtonCell.m in Sources */,
+				71BB08311B5733C00064B326 /* TealiumIQ.m in Sources */,
+				71BB08321B5733C00064B326 /* AppDelegate.m in Sources */,
+				71BB08331B5733C00064B326 /* APISampler.m in Sources */,
+				71BB08341B5733C00064B326 /* main.m in Sources */,
+				71BB08351B5733C00064B326 /* Settings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BB08451B5733F70064B326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB08461B5733F70064B326 /* FormItemCell.m in Sources */,
+				71BB08471B5733F70064B326 /* ButtonCell.m in Sources */,
+				71BB08481B5733F70064B326 /* TealiumIQ.m in Sources */,
+				71BB08491B5733F70064B326 /* AppDelegate.m in Sources */,
+				71BB084A1B5733F70064B326 /* APISampler.m in Sources */,
+				71BB084B1B5733F70064B326 /* main.m in Sources */,
+				71BB084C1B5733F70064B326 /* Settings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BB08701B5741F90064B326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BB08711B5741F90064B326 /* FormItemCell.m in Sources */,
+				71BB08721B5741F90064B326 /* ButtonCell.m in Sources */,
+				71BB08731B5741F90064B326 /* TealiumIQ.m in Sources */,
+				71BB08741B5741F90064B326 /* AppDelegate.m in Sources */,
+				71BB08751B5741F90064B326 /* APISampler.m in Sources */,
+				71BB08761B5741F90064B326 /* main.m in Sources */,
+				71BB08771B5741F90064B326 /* Settings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71DE33AB1B505BBF007F3ADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,7 +571,7 @@
 /* Begin PBXTargetDependency section */
 		71DE33CD1B505BBF007F3ADF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 71DE33AE1B505BBF007F3ADF /* TealiumDemo */;
+			target = 71DE33AE1B505BBF007F3ADF /* TealiumDemo_Compactx */;
 			targetProxy = 71DE33CC1B505BBF007F3ADF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -351,6 +596,130 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		71BB08401B5733C00064B326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/jasonkoo/Tealium/ios-library/TealiumFull",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Full",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"FULL=1",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "TealiumDemo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = TealiumDemo_Full;
+				PRODUCT_NAME = TealiumDemo_Full;
+			};
+			name = Debug;
+		};
+		71BB08411B5733C00064B326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/jasonkoo/Tealium/ios-library/TealiumFull",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Full",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "FULL=1";
+				INFOPLIST_FILE = "TealiumDemo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = TealiumDemo_Full;
+				PRODUCT_NAME = TealiumDemo_Full;
+			};
+			name = Release;
+		};
+		71BB08571B5733F70064B326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Collect",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"COLLECT=1",
+				);
+				INFOPLIST_FILE = "TealiumDemo - Compact copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TealiumDemo_Collect;
+			};
+			name = Debug;
+		};
+		71BB08581B5733F70064B326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Collect",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "COLLECT=1";
+				INFOPLIST_FILE = "TealiumDemo - Compact copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TealiumDemo_Collect;
+			};
+			name = Release;
+		};
+		71BB08821B5741F90064B326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/jasonkoo/Tealium/ios-library/TealiumCompact",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Compact",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COMPACT=1",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "TealiumDemo_Compact copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "TealiumDemo_Compact copy";
+			};
+			name = Debug;
+		};
+		71BB08831B5741F90064B326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/jasonkoo/Tealium/ios-library/TealiumCompact",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Compact",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "COMPACT=1";
+				INFOPLIST_FILE = "TealiumDemo_Compact copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "TealiumDemo_Compact copy";
+			};
+			name = Release;
+		};
 		71DE33D31B505BBF007F3ADF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,6 +807,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/jasonkoo/Tealium/ios-library/TealiumCompact",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Compact",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COMPACT=1",
+					"DEBUG=1",
 				);
 				INFOPLIST_FILE = TealiumDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -454,7 +829,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/jasonkoo/Tealium/ios-library/TealiumCompact",
+					"$(PROJECT_DIR)/TealiumDemo/Libraries/Compact",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = "COMPACT=1";
 				INFOPLIST_FILE = TealiumDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +878,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		71BB083F1B5733C00064B326 /* Build configuration list for PBXNativeTarget "TealiumDemo_Full" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BB08401B5733C00064B326 /* Debug */,
+				71BB08411B5733C00064B326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BB08561B5733F70064B326 /* Build configuration list for PBXNativeTarget "TealiumDemo_Collect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BB08571B5733F70064B326 /* Debug */,
+				71BB08581B5733F70064B326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BB08811B5741F90064B326 /* Build configuration list for PBXNativeTarget "TealiumDemo_Compact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BB08821B5741F90064B326 /* Debug */,
+				71BB08831B5741F90064B326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		71DE33AA1B505BBF007F3ADF /* Build configuration list for PBXProject "TealiumDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -509,7 +914,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71DE33D51B505BBF007F3ADF /* Build configuration list for PBXNativeTarget "TealiumDemo" */ = {
+		71DE33D51B505BBF007F3ADF /* Build configuration list for PBXNativeTarget "TealiumDemo_Compactx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71DE33D61B505BBF007F3ADF /* Debug */,

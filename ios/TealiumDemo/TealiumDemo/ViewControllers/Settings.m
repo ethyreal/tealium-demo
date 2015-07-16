@@ -33,11 +33,11 @@ typedef NS_ENUM(NSInteger, SettingsItem){
 
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+#ifndef COLLECT
     [Tealium trackCallType:TealiumViewCall
                 customData:nil
                     object:self];
-    
+#endif
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
